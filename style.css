@@ -1,0 +1,277 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Merriweather", serif;
+    text-align: center;
+    color: #56564e;
+    line-height: 1.4;
+}
+
+p {
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 60px 0 25px 0;
+}
+
+h1, h3 {
+    text-transform: uppercase;
+}
+
+h2 {
+    margin: 30px 0 10px;
+    padding: 25px 0 0 0;
+}
+
+a h2 {
+    font-size: 1.6em;
+    color: #56564e;
+    text-transform: none;
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 1.2em;
+    padding: 20px 20px 0 20px;
+    color: #709d9e;
+}
+
+.fixed-nav {
+    position: fixed;
+    width: 100%;
+}
+
+.footer-band {
+    height: 5px;
+    background-color: #709d9e;
+    margin: 40px 0 0 0;
+}
+
+.title {
+    font-size: 2.6em;
+    padding: 90px 0 0;
+    font-weight: 900;
+    color: #56564e;
+    line-height: 1.1;
+}
+
+.sub-title {
+    font-size: 1.8em;
+    font-weight: 300;
+    margin-bottom: -30px;
+}
+
+.regular-width {
+    margin: 0 auto;
+    width: 610px;
+    line-height: 1.6;
+    font-size: 1em;
+    text-align: left;
+}
+
+.regular-width h1, .table-center {
+    text-align: center;
+}
+
+p a, tbody a {
+    color: #709d9e;
+    text-decoration: underline;
+}
+
+.regular-width .small-button a {
+    color: #eee;
+    text-decoration: none;
+}
+
+.regular-width a h2, .regular-width a h1 {
+    color: #56564e;
+    text-decoration: none;
+}
+
+.small-button {
+    color: #fff;
+    background-color: #709d9e;
+    padding: 10px 35px 10px;
+    border-radius: 5px;
+    margin: 30px 30px 30px 0;
+    text-decoration: none;
+}
+
+.small-button:hover {
+    background-color: #777;
+}
+
+.social-icons {
+    margin-top: 60px;
+}
+
+.social-icons a {
+    padding: 20px;
+}
+
+.social-icons a:hover {
+    color: #777;
+}
+
+.regular-width h2 {
+    border-top: 1px dotted #709d9e;
+    margin: 50px 0 20px 0;
+}
+
+.project-container {
+    width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #dcdedf;
+}
+
+.project-container p {
+    padding: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9em;
+}
+
+.project {
+    height: 320px;
+    width: 280px;
+    background-color: #fff;
+    padding: 5px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+div.project:hover {
+    background-color: #709d9e;
+}
+
+.project-image {
+    height: 155px;
+    width: 270px;
+    background-color: #555;
+}
+
+.project-info {
+    height: 155px;
+    width: 270px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+nav {
+    background-color: #eee;
+    padding: 0 30px;
+}
+
+nav ul {
+    padding: 10px;
+    /*background-color: #eee;*/
+}
+
+nav ul li {
+    display: inline;
+    padding: 10px;
+}
+
+nav ul a {
+    color: #888;
+}
+
+nav ul li:hover {
+    color: #709d9e;
+    border-radius: 5px;
+}
+
+nav .nav-text li:hover {
+    background-color: #fff;
+}
+
+.nav-icons, .nav-text {
+    display: inline;
+}
+
+.nav-icons {
+    float: left;
+}
+
+.nav-text {
+    float: right;
+}
+
+/*********************************************************/
+/* TABLES
+**********************************************************/
+
+table {
+    font-size: 15px;
+}
+
+caption {
+    display: none;
+}
+
+thead th {
+    background: #709d9e;
+    color: #fff;
+}
+
+th td { text-decoration: bold; }
+
+th, td {
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background: #e8eeef;
+}
+
+tfoot td {
+    color: #888;
+    font-size: 13px;
+}
+
+/*********************************************************/
+/* MEDIA QUERIES
+**********************************************************/
+
+/* Smaller title and headings */
+@media (max-width: 709px) {
+    .title {
+        font-size: 28px;
+        padding: 70px 0 5px 5px;
+    }
+    .sub-title {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 22px;
+        margin: 55px 0 25px 0;
+    }
+    .regular-width {
+        width: 80%;
+    }
+}
+
+/* Smaller and more compact text */
+@media (max-width: 479px) {
+    .regular-width {
+        margin: 0 auto;
+        line-height: 1.6;
+        font-size: 0.9em;
+        width: 92%;
+    }
+}

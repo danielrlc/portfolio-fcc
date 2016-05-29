@@ -50,8 +50,7 @@ h3 {
     color: #709d9e;
 }
 
-.fixed-nav {
-    position: fixed;
+.nav-class {
     width: 100%;
 }
 
@@ -179,7 +178,6 @@ nav {
 
 nav ul {
     padding: 10px;
-    /*background-color: #eee;*/
 }
 
 nav ul li {
@@ -210,6 +208,15 @@ nav .nav-text li:hover {
 
 .nav-text {
     float: right;
+}
+
+section ul {
+    margin-top: -20px;
+}
+
+section ul li a {
+    color: #709d9e;
+    text-decoration: underline;
 }
 
 /*********************************************************/
@@ -273,5 +280,15 @@ tfoot td {
         line-height: 1.6;
         font-size: 0.9em;
         width: 92%;
+    }
+    h1, h2 {
+        padding: 10px 0 0 0;
+    }
+    .nav-icons, .nav-text {
+        float: none;
+        display: block;
+    }
+    .title {
+        padding: 30px 0 0 0;
     }
 }
